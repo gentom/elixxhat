@@ -19,3 +19,7 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+import socket from "./socket"
+import Talk from "./talk"
+ 
+Talk.init(socket, document.getElementById("msg-input"))
